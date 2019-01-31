@@ -9,7 +9,6 @@ import java.util.List;
 public class Task {
 
     private static final String DESCRIPTION_PREFIX = "description: ";
-    // A list of past descriptions.
     private List<String> pastDescriptions = new ArrayList<>();
     private String description;
     private boolean isImportant;
@@ -41,10 +40,6 @@ public class Task {
         System.out.println(this);
     }
 
-    /**
-     * Returns the DESCRIPTION_PREFIX followed by the description.
-     * @return A string with the format DESCRIPTION_PREFIX followed by the description.
-     */
     @Override
     public String toString() {
         return DESCRIPTION_PREFIX + description;
